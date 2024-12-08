@@ -1,11 +1,29 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {}
+    "net8.0-windows7.0": {
+      "ImageProcessing/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ImageProcessing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ImageProcessing.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ImageProcessing/1.0.0": {
+      "type": "project",
+      "path": "../ImageProcessing/ImageProcessing.csproj",
+      "msbuildProject": "../ImageProcessing/ImageProcessing.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": []
+    "net8.0-windows7.0": [
+      "ImageProcessing >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Bartek\\.nuget\\packages\\": {},
@@ -38,7 +56,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Bartek\\source\\repos\\Winieta\\ImageProcessing\\ImageProcessing.csproj": {
+              "projectPath": "C:\\Users\\Bartek\\source\\repos\\Winieta\\ImageProcessing\\ImageProcessing.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "Winieta/1.0.0": {
+        "dependencies": {
+          "ImageProcessing": "1.0.0"
+        },
         "runtime": {
           "Winieta.dll": {}
+        }
+      },
+      "ImageProcessing/1.0.0": {
+        "runtime": {
+          "ImageProcessing.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "Winieta/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ImageProcessing/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,14 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Winieta", "Winieta\Winieta.csproj", "{9C5238C4-5652-4F47-ADBB-08B09BA7260C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1A8011D1-D5EB-41F7-852F-4B6900F62C34} = {1A8011D1-D5EB-41F7-852F-4B6900F62C34}
+		{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A} = {21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinietaDLL", "WinietaDLL\WinietaDLL.vcxproj", "{1A8011D1-D5EB-41F7-852F-4B6900F62C34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageProcessing", "ImageProcessing\ImageProcessing.csproj", "{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +47,18 @@ Global
 		{1A8011D1-D5EB-41F7-852F-4B6900F62C34}.Release|x64.Build.0 = Release|x64
 		{1A8011D1-D5EB-41F7-852F-4B6900F62C34}.Release|x86.ActiveCfg = Release|Win32
 		{1A8011D1-D5EB-41F7-852F-4B6900F62C34}.Release|x86.Build.0 = Release|Win32
+		{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}.Debug|x64.Build.0 = Debug|Any CPU
+		{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}.Debug|x86.Build.0 = Debug|Any CPU
+		{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}.Release|x64.ActiveCfg = Release|Any CPU
+		{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}.Release|x64.Build.0 = Release|Any CPU
+		{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}.Release|x86.ActiveCfg = Release|Any CPU
+		{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

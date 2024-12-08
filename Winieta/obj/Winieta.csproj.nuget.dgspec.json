@@ -4,6 +4,22 @@
     "C:\\Users\\Bartek\\source\\repos\\Winieta\\Winieta\\Winieta.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Bartek\\source\\repos\\Winieta\\ImageProcessing\\ImageProcessing.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bartek\\source\\repos\\Winieta\\ImageProcessing\\ImageProcessing.csproj",
+        "projectName": "ImageProcessing",
+        "projectPath": "C:\\Users\\Bartek\\source\\repos\\Winieta\\ImageProcessing\\ImageProcessing.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\Bartek\\source\\repos\\Winieta\\Winieta\\Winieta.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +47,11 @@
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Bartek\\source\\repos\\Winieta\\ImageProcessing\\ImageProcessing.csproj": {
+                "projectPath": "C:\\Users\\Bartek\\source\\repos\\Winieta\\ImageProcessing\\ImageProcessing.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
