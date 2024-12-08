@@ -1,0 +1,17 @@
+C:\Users\Bartek\source\repos\Winieta\Winieta\bin\x64\Debug\net8.0-windows\Winieta.exe
+C:\Users\Bartek\source\repos\Winieta\Winieta\bin\x64\Debug\net8.0-windows\Winieta.deps.json
+C:\Users\Bartek\source\repos\Winieta\Winieta\bin\x64\Debug\net8.0-windows\Winieta.runtimeconfig.json
+C:\Users\Bartek\source\repos\Winieta\Winieta\bin\x64\Debug\net8.0-windows\Winieta.dll
+C:\Users\Bartek\source\repos\Winieta\Winieta\bin\x64\Debug\net8.0-windows\Winieta.pdb
+C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\Winieta.Form1.resources
+C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\Winieta.csproj.GenerateResource.cache
+C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\Winieta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\Winieta.AssemblyInfoInputs.cache
+C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\Winieta.AssemblyInfo.cs
+C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\Winieta.csproj.CoreCompileInputs.cache
+C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\Winieta.dll
+C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\refint\Winieta.dll
+C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\Winieta.pdb
+C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\Winieta.genruntimeconfig.cache
+C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\ref\Winieta.dll
+C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\Winieta.Properties.Resources.resources

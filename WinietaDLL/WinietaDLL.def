@@ -1,0 +1,2 @@
+LIBRARY WinietaDLL
+EXPORTS MyProc1
