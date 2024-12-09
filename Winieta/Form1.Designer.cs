@@ -36,8 +36,12 @@
             label2 = new Label();
             BtnApplyVignette = new Button();
             label1 = new Label();
+            IntensityTB = new TrackBar();
+            label3 = new Label();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)IntensityTB).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -108,11 +112,44 @@
             label1.TabIndex = 6;
             label1.Text = "Original image";
             // 
+            // IntensityTB
+            // 
+            IntensityTB.Location = new Point(81, 264);
+            IntensityTB.Minimum = 1;
+            IntensityTB.Name = "IntensityTB";
+            IntensityTB.Size = new Size(116, 45);
+            IntensityTB.TabIndex = 7;
+            IntensityTB.Value = 2;
+            IntensityTB.Scroll += IntensityTB_Scroll;
+
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(23, 275);
+            label3.Name = "label3";
+            label3.Size = new Size(52, 15);
+            label3.TabIndex = 8;
+            label3.Text = "Intensity";
+            label3.Click += label3_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(126, 312);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 15);
+            label4.TabIndex = 9;
+            label4.Click += label4_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(640, 455);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(IntensityTB);
             Controls.Add(label1);
             Controls.Add(BtnApplyVignette);
             Controls.Add(label2);
@@ -125,6 +162,7 @@
             Text = "VignetteEffect";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)IntensityTB).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -138,5 +176,8 @@
         private Label label2;
         private Button BtnApplyVignette;
         private Label label1;
+        private Label label3;
+        private Label label4;
+        private TrackBar IntensityTB;
     }
 }

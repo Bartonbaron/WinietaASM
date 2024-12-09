@@ -55,14 +55,15 @@ namespace Winieta
             {
                 Bitmap originalImage = new Bitmap(pictureBox1.Image);
 
-                // Ustaw intensywnoœæ winiety (np. z suwaka)
-                float intensity = 2.0f; // Przyk³adowa wartoœæ
+                // Ustaw intensywnoœæ winiety z suwaka
+                float intensity = IntensityTB.Value / (float)IntensityTB.Maximum; // Normalizacja do przedzia³u 0-1
+
+                VignetteEffect vignetteEffect = new VignetteEffect();
 
                 // Zastosuj efekt winiety
-                Bitmap processedImage = VignetteEffect.ApplyVignette(originalImage, intensity);
-
+                Bitmap vignetteImage = vignetteEffect.ApplyVignette(originalImage, intensity);
                 // Wyœwietl przetworzony obraz
-                pictureBox2.Image = processedImage;
+                pictureBox2.Image = vignetteImage;
                 pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             }
             else
@@ -77,6 +78,22 @@ namespace Winieta
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IntensityTB_Scroll(object sender, EventArgs e)
+        {
+            // Wyœwietl bie¿¹c¹ wartoœæ w etykiecie
+            label4.Text = $"Intensity: {IntensityTB.Value}";
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

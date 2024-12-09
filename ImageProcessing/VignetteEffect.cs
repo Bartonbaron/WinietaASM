@@ -9,41 +9,40 @@ namespace ImageProcessing
 {
     public class VignetteEffect
     {
-        public static Bitmap ApplyVignette(Bitmap image, float intensity)
+        public Bitmap ApplyVignette(Bitmap image, float intensity)
         {
-            int width = image.Width;
-            int height = image.Height;
-            float centerX = width / 2f;
-            float centerY = height / 2f;
-            float maxDistance = (float)Math.Sqrt(centerX * centerX + centerY * centerY);
+            Bitmap result = new Bitmap(image.Width, image.Height);
 
-            Bitmap output = new Bitmap(width, height);
+            int centerX = image.Width / 2;
+            int centerY = image.Height / 2;
+            double maxDistance = Math.Sqrt(centerX * centerX + centerY * centerY);
 
-            for (int y = 0; y < height; y++)
+            for (int y = 0; y < image.Height; y++)
             {
-                for (int x = 0; x < width; x++)
+                for (int x = 0; x < image.Width; x++)
                 {
-                    float dx = x - centerX;
-                    float dy = y - centerY;
-                    float normalizedDistance = (float)Math.Sqrt(dx * dx + dy * dy) / maxDistance;
+                    Color pixelColor = image.GetPixel(x, y);
 
-                    // Współczynnik winiety z funkcją Gaussa
-                    float vignetteFactor = (float)Math.Exp(-normalizedDistance * normalizedDistance * intensity);
+                    // Oblicz odległość od środka
+                    double dx = x - centerX;
+                    double dy = y - centerY;
+                    double distance = Math.Sqrt(dx * dx + dy * dy) / maxDistance;
 
-                    Color originalColor = image.GetPixel(x, y);
-                    int r = (int)(originalColor.R * vignetteFactor);
-                    int g = (int)(originalColor.G * vignetteFactor);
-                    int b = (int)(originalColor.B * vignetteFactor);
+                    // Wyznacz współczynnik winiety na podstawie intensywności
+                    double vignetteFactor = 1 - (distance * intensity);
+                    vignetteFactor = Math.Max(0, Math.Min(1, vignetteFactor));
 
-                    // Zachowanie kanału alfa
-                    int a = originalColor.A;
+                    // Modyfikacja koloru piksela
+                    int r = (int)(pixelColor.R * vignetteFactor);
+                    int g = (int)(pixelColor.G * vignetteFactor);
+                    int b = (int)(pixelColor.B * vignetteFactor);
 
-                    output.SetPixel(x, y, Color.FromArgb(a, r, g, b));
+                    result.SetPixel(x, y, Color.FromArgb(r, g, b));
                 }
             }
-
-            return output;
+            return result;
         }
+
 
     }
 }

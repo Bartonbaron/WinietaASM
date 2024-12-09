@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bartek\\source\\repos\\Winieta\\Winieta\\Winieta.csproj",
+      "projectUniqueName": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\Winieta\\Winieta.csproj",
       "projectName": "Winieta",
-      "projectPath": "C:\\Users\\Bartek\\source\\repos\\Winieta\\Winieta\\Winieta.csproj",
+      "projectPath": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\Winieta\\Winieta.csproj",
       "packagesPath": "C:\\Users\\Bartek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bartek\\source\\repos\\Winieta\\Winieta\\obj\\",
+      "outputPath": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\Winieta\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -57,8 +57,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Bartek\\source\\repos\\Winieta\\ImageProcessing\\ImageProcessing.csproj": {
-              "projectPath": "C:\\Users\\Bartek\\source\\repos\\Winieta\\ImageProcessing\\ImageProcessing.csproj"
+            "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessing\\ImageProcessing.csproj": {
+              "projectPath": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessing\\ImageProcessing.csproj"
             }
           }
         }
