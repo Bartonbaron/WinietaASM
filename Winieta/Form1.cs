@@ -7,6 +7,7 @@ namespace Winieta
 {
     public partial class Form1 : Form
     {
+        private Bitmap? vignetteImage;
         public Form1()
         {
             InitializeComponent();
@@ -61,7 +62,7 @@ namespace Winieta
                 VignetteEffect vignetteEffect = new VignetteEffect();
 
                 // Zastosuj efekt winiety
-                Bitmap vignetteImage = vignetteEffect.ApplyVignette(originalImage, intensity);
+                vignetteImage = vignetteEffect.ApplyVignette(originalImage, intensity);
                 // Wyœwietl przetworzony obraz
                 pictureBox2.Image = vignetteImage;
                 pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -94,6 +95,57 @@ namespace Winieta
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSaveImage_Click(object sender, EventArgs e)
+        {
+            // Tworzenie okna dialogowego do zapisu pliku
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Image Files|*.bmp;*.jpg;*.jpeg;*.png";
+            saveFileDialog.Title = "Zapisz przetworzony obraz";
+
+            // Wyœwietlenie okna dialogowego
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    // Zapisanie przetworzonego obrazu (jeœli istnieje)
+                    if (vignetteImage != null)
+                    {
+                        vignetteImage.Save(saveFileDialog.FileName);
+                        MessageBox.Show("Obraz zapisany pomyœlnie!", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Brak obrazu do zapisania.", "B³¹d", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Obs³uga b³êdów podczas zapisu pliku
+                    MessageBox.Show($"Wyst¹pi³ b³¹d podczas zapisywania pliku: {ex.Message}", "B³¹d", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

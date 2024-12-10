@@ -39,9 +39,13 @@
             IntensityTB = new TrackBar();
             label3 = new Label();
             label4 = new Label();
+            btnSaveImage = new Button();
+            label5 = new Label();
+            trackBar2 = new TrackBar();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)IntensityTB).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)trackBar2).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -58,7 +62,7 @@
             // 
             // BtnLoadImg
             // 
-            BtnLoadImg.Location = new Point(33, 206);
+            BtnLoadImg.Location = new Point(86, 187);
             BtnLoadImg.Name = "BtnLoadImg";
             BtnLoadImg.Size = new Size(125, 32);
             BtnLoadImg.TabIndex = 0;
@@ -95,7 +99,7 @@
             // 
             // BtnApplyVignette
             // 
-            BtnApplyVignette.Location = new Point(360, 206);
+            BtnApplyVignette.Location = new Point(418, 187);
             BtnApplyVignette.Name = "BtnApplyVignette";
             BtnApplyVignette.Size = new Size(125, 32);
             BtnApplyVignette.TabIndex = 4;
@@ -106,27 +110,27 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(126, 169);
+            label1.Location = new Point(110, 169);
             label1.Name = "label1";
             label1.Size = new Size(85, 15);
             label1.TabIndex = 6;
             label1.Text = "Original image";
+            label1.Click += label1_Click_1;
             // 
             // IntensityTB
             // 
-            IntensityTB.Location = new Point(81, 264);
+            IntensityTB.Location = new Point(70, 265);
             IntensityTB.Minimum = 1;
             IntensityTB.Name = "IntensityTB";
-            IntensityTB.Size = new Size(116, 45);
+            IntensityTB.Size = new Size(125, 45);
             IntensityTB.TabIndex = 7;
             IntensityTB.Value = 2;
             IntensityTB.Scroll += IntensityTB_Scroll;
-
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(23, 275);
+            label3.Location = new Point(12, 275);
             label3.Name = "label3";
             label3.Size = new Size(52, 15);
             label3.TabIndex = 8;
@@ -142,11 +146,41 @@
             label4.TabIndex = 9;
             label4.Click += label4_Click;
             // 
+            // btnSaveImage
+            // 
+            btnSaveImage.Location = new Point(418, 237);
+            btnSaveImage.Name = "btnSaveImage";
+            btnSaveImage.Size = new Size(125, 34);
+            btnSaveImage.TabIndex = 10;
+            btnSaveImage.Text = "Save Image";
+            btnSaveImage.UseVisualStyleBackColor = true;
+            btnSaveImage.Click += btnSaveImage_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(12, 369);
+            label5.Name = "label5";
+            label5.Size = new Size(107, 15);
+            label5.TabIndex = 12;
+            label5.Text = "Number of threads";
+            label5.Click += label5_Click;
+            // 
+            // trackBar2
+            // 
+            trackBar2.Location = new Point(125, 357);
+            trackBar2.Name = "trackBar2";
+            trackBar2.Size = new Size(125, 45);
+            trackBar2.TabIndex = 14;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(640, 455);
+            ClientSize = new Size(640, 486);
+            Controls.Add(trackBar2);
+            Controls.Add(label5);
+            Controls.Add(btnSaveImage);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(IntensityTB);
@@ -163,6 +197,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)IntensityTB).EndInit();
+            ((System.ComponentModel.ISupportInitialize)trackBar2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -179,5 +214,8 @@
         private Label label3;
         private Label label4;
         private TrackBar IntensityTB;
+        private Button btnSaveImage;
+        private Label label5;
+        private TrackBar trackBar2;
     }
 }

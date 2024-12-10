@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Winieta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cedf64801f4956a8ac98d5c67598e647ce1b0389")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aabbbaa0a1b178e9065f792e8d5360b6135f1568")]
 [assembly: System.Reflection.AssemblyProductAttribute("Winieta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Winieta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
