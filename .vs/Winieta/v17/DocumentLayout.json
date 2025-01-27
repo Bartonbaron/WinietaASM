@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C5238C4-5652-4F47-ADBB-08B09BA7260C}|Winieta\\Winieta.csproj|c:\\users\\bartek\\documents\\github\\winietaasm\\winieta\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}|ImageProcessing\\ImageProcessing.csproj|C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\imageprocessing\\vignetteeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}|ImageProcessing\\ImageProcessing.csproj|solutionrelative:imageprocessing\\vignetteeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C5238C4-5652-4F47-ADBB-08B09BA7260C}|Winieta\\Winieta.csproj|C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\winieta\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9C5238C4-5652-4F47-ADBB-08B09BA7260C}|Winieta\\Winieta.csproj|solutionrelative:winieta\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C5238C4-5652-4F47-ADBB-08B09BA7260C}|Winieta\\Winieta.csproj|c:\\users\\bartek\\documents\\github\\winietaasm\\winieta\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C5238C4-5652-4F47-ADBB-08B09BA7260C}|Winieta\\Winieta.csproj|solutionrelative:winieta\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C5238C4-5652-4F47-ADBB-08B09BA7260C}|Winieta\\Winieta.csproj|c:\\users\\bartek\\documents\\github\\winietaasm\\winieta\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C5238C4-5652-4F47-ADBB-08B09BA7260C}|Winieta\\Winieta.csproj|solutionrelative:winieta\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}|ImageProcessing\\ImageProcessing.csproj|C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\imageprocessing\\vignetteeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21ACFCF5-BEC9-4513-91B6-DE1C7BE4A16A}|ImageProcessing\\ImageProcessing.csproj|solutionrelative:imageprocessing\\vignetteeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C5238C4-5652-4F47-ADBB-08B09BA7260C}|Winieta\\Winieta.csproj|c:\\users\\bartek\\documents\\github\\winietaasm\\winieta\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C5238C4-5652-4F47-ADBB-08B09BA7260C}|Winieta\\Winieta.csproj|solutionrelative:winieta\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C5238C4-5652-4F47-ADBB-08B09BA7260C}|Winieta\\Winieta.csproj|c:\\users\\bartek\\documents\\github\\winietaasm\\winieta\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C5238C4-5652-4F47-ADBB-08B09BA7260C}|Winieta\\Winieta.csproj|solutionrelative:winieta\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A8011D1-D5EB-41F7-852F-4B6900F62C34}|WinietaDLL\\WinietaDLL.vcxproj|C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\WinietaDLL\\WinietaDLL.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1A8011D1-D5EB-41F7-852F-4B6900F62C34}|WinietaDLL\\WinietaDLL.vcxproj|solutionrelative:WinietaDLL\\WinietaDLL.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,32 +46,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\Winieta\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Winieta\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\Winieta\\Form1.Designer.cs",
+              "RelativeToolTip": "Winieta\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T17:02:06.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WinietaDLL.asm",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\WinietaDLL\\WinietaDLL.asm",
+              "RelativeDocumentMoniker": "WinietaDLL\\WinietaDLL.asm",
+              "ToolTip": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\WinietaDLL\\WinietaDLL.asm",
+              "RelativeToolTip": "WinietaDLL\\WinietaDLL.asm",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-23T15:01:30.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VignetteEffect.cs",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessing\\VignetteEffect.cs",
+              "RelativeDocumentMoniker": "ImageProcessing\\VignetteEffect.cs",
+              "ToolTip": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessing\\VignetteEffect.cs",
+              "RelativeToolTip": "ImageProcessing\\VignetteEffect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T18:44:27.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\Winieta\\Form1.cs",
               "RelativeDocumentMoniker": "Winieta\\Form1.cs",
               "ToolTip": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\Winieta\\Form1.cs",
               "RelativeToolTip": "Winieta\\Form1.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAcwJUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAcwBoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T18:31:42.194Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VignetteEffect.cs",
-              "DocumentMoniker": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessing\\VignetteEffect.cs",
-              "RelativeDocumentMoniker": "ImageProcessing\\VignetteEffect.cs",
-              "ToolTip": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessing\\VignetteEffect.cs",
-              "RelativeToolTip": "ImageProcessing\\VignetteEffect.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCIAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:44:27.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\Winieta\\Program.cs",
               "RelativeDocumentMoniker": "Winieta\\Program.cs",
@@ -71,11 +105,12 @@
               "RelativeToolTip": "Winieta\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:31:12.073Z"
+              "WhenOpened": "2024-12-08T18:31:12.073Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Projekt]",
               "DocumentMoniker": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\Winieta\\Form1.cs",
               "RelativeDocumentMoniker": "Winieta\\Form1.cs",

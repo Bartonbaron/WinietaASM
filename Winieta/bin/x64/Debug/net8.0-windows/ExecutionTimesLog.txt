@@ -1,0 +1,9 @@
+
+Liczba wątków: 1, Czas wykonania: 417 ms
+Liczba wątków: 2, Czas wykonania: 269 ms
+Liczba wątków: 4, Czas wykonania: 155 ms
+Liczba wątków: 8, Czas wykonania: 122 ms
+Liczba wątków: 16, Czas wykonania: 158 ms
+Liczba wątków: 32, Czas wykonania: 147 ms
+Liczba wątków: 64, Czas wykonania: 208 ms
+Liczba wątków: 64, Czas wykonania: 163 ms

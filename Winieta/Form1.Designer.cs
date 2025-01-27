@@ -38,14 +38,15 @@
             label1 = new Label();
             IntensityTB = new TrackBar();
             label3 = new Label();
-            label4 = new Label();
             btnSaveImage = new Button();
+            label4 = new Label();
             label5 = new Label();
-            trackBar2 = new TrackBar();
+            threadTrackBar = new TrackBar();
+            threadCountLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)IntensityTB).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)trackBar2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)threadTrackBar).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -119,7 +120,7 @@
             // 
             // IntensityTB
             // 
-            IntensityTB.Location = new Point(70, 265);
+            IntensityTB.Location = new Point(71, 263);
             IntensityTB.Minimum = 1;
             IntensityTB.Name = "IntensityTB";
             IntensityTB.Size = new Size(125, 45);
@@ -137,15 +138,6 @@
             label3.Text = "Intensity";
             label3.Click += label3_Click;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(126, 312);
-            label4.Name = "label4";
-            label4.Size = new Size(0, 15);
-            label4.TabIndex = 9;
-            label4.Click += label4_Click;
-            // 
             // btnSaveImage
             // 
             btnSaveImage.Location = new Point(418, 237);
@@ -156,29 +148,51 @@
             btnSaveImage.UseVisualStyleBackColor = true;
             btnSaveImage.Click += btnSaveImage_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(131, 309);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 15);
+            label4.TabIndex = 9;
+            label4.Click += label4_Click;
+            // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 369);
+            label5.Location = new Point(2, 361);
             label5.Name = "label5";
             label5.Size = new Size(107, 15);
             label5.TabIndex = 12;
             label5.Text = "Number of threads";
             label5.Click += label5_Click;
             // 
-            // trackBar2
+            // threadTrackBar
             // 
-            trackBar2.Location = new Point(125, 357);
-            trackBar2.Name = "trackBar2";
-            trackBar2.Size = new Size(125, 45);
-            trackBar2.TabIndex = 14;
+            threadTrackBar.Location = new Point(116, 348);
+            threadTrackBar.Maximum = 64;
+            threadTrackBar.Minimum = 1;
+            threadTrackBar.Name = "threadTrackBar";
+            threadTrackBar.Size = new Size(125, 45);
+            threadTrackBar.TabIndex = 14;
+            threadTrackBar.Value = 1;
+            threadTrackBar.Scroll += threadTrackBar_Scroll;
+            // 
+            // threadCountLabel
+            // 
+            threadCountLabel.AutoSize = true;
+            threadCountLabel.Location = new Point(131, 396);
+            threadCountLabel.Name = "threadCountLabel";
+            threadCountLabel.Size = new Size(0, 15);
+            threadCountLabel.TabIndex = 15;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(640, 486);
-            Controls.Add(trackBar2);
+            Controls.Add(threadCountLabel);
+            Controls.Add(threadTrackBar);
             Controls.Add(label5);
             Controls.Add(btnSaveImage);
             Controls.Add(label4);
@@ -197,7 +211,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)IntensityTB).EndInit();
-            ((System.ComponentModel.ISupportInitialize)trackBar2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)threadTrackBar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -212,10 +226,11 @@
         private Button BtnApplyVignette;
         private Label label1;
         private Label label3;
-        private Label label4;
         private TrackBar IntensityTB;
         private Button btnSaveImage;
+        private Label label4;
         private Label label5;
-        private TrackBar trackBar2;
+        private TrackBar threadTrackBar;
+        private Label threadCountLabel;
     }
 }
