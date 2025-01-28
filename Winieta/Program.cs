@@ -7,9 +7,6 @@ namespace Winieta
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
-        
-        [DllImport(@"C:\Users\Bartek\source\repos\Winieta\x64\Debug\WinietaDLL.dll")]
-        static extern int MyProc1(int a, int b);
         [STAThread]
         static void Main()
         {

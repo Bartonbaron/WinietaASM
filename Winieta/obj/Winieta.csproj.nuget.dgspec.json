@@ -4,6 +4,22 @@
     "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\Winieta\\Winieta.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessingASM\\ImageProcessingASM.vcxproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessingASM\\ImageProcessingASM.vcxproj",
+        "projectName": "ImageProcessingASM",
+        "projectPath": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessingASM\\ImageProcessingASM.vcxproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "native": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "native": {}
+      }
+    },
     "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessing\\ImageProcessing.csproj": {
       "restore": {
         "projectUniqueName": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessing\\ImageProcessing.csproj",
@@ -48,6 +64,9 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
+              "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessingASM\\ImageProcessingASM.vcxproj": {
+                "projectPath": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessingASM\\ImageProcessingASM.vcxproj"
+              },
               "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessing\\ImageProcessing.csproj": {
                 "projectPath": "C:\\Users\\Bartek\\Documents\\GitHub\\WinietaASM\\ImageProcessing\\ImageProcessing.csproj"
               }
@@ -88,7 +107,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

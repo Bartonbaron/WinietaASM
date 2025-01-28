@@ -5,7 +5,6 @@ using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
-
 namespace Winieta
 {
     public partial class Form1 : Form
@@ -17,6 +16,8 @@ namespace Winieta
             this.Load += Form1_Load;
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            checkBoxCSharp.CheckedChanged += checkBoxCSharp_CheckedChanged;
+            checkBoxASM.CheckedChanged += checkBoxASM_CheckedChanged;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -33,7 +34,6 @@ namespace Winieta
             // Aktualizacja etykiety liczby w¹tków
             threadCountLabel.Text = $"Liczba w¹tków: {threadTrackBar.Value}";
         }
-
 
         private byte[] BitmapToByteArrayRGB(Bitmap bitmap, out int stride)
         {
@@ -53,7 +53,6 @@ namespace Winieta
             rgbBitmap.UnlockBits(bitmapData);
             return imageData;
         }
-
 
         private Bitmap ByteArrayToBitmapRGB(byte[] imageData, int width, int height, int stride)
         {
@@ -106,13 +105,10 @@ namespace Winieta
         }
         private void BtnApplyVignette_Click(object sender, EventArgs e)
         {
-            if (pictureBox1.Image != null)
+            if (pictureBox1.Image is Bitmap originalImage)
             {
                 try
                 {
-                    // Pobranie oryginalnego obrazu jako Bitmap
-                    Bitmap originalImage = new Bitmap(pictureBox1.Image);
-
                     // Obliczenie intensywnoœci na podstawie suwaka
                     float intensity = IntensityTB.Value / (float)IntensityTB.Maximum;
 
@@ -125,16 +121,22 @@ namespace Winieta
 
                     // Pomiar czasu przetwarzania
                     Stopwatch stopwatch = new Stopwatch();
+
+                    // Wybór implementacji
                     stopwatch.Start();
-
-                    // Przetwarzanie efektu winiety
-                    VignetteEffect vignetteEffect = new VignetteEffect();
-                    vignetteEffect.ApplyVignette(imageData, originalImage.Width, originalImage.Height, stride, intensity, threadCount);
-
+                    if (checkBoxCSharp.Checked)
+                    {
+                        var vignetteEffect = new VignetteEffect();
+                        vignetteEffect.ApplyVignette(imageData, originalImage.Width, originalImage.Height, stride, intensity, threadCount);
+                    }
+                    else if (checkBoxASM.Checked)
+                    {
+                        VignetteProcessorASM.ApplyVignette(imageData, originalImage.Width, originalImage.Height, stride, intensity, threadCount);
+                    }
                     stopwatch.Stop();
 
                     // Konwersja przetworzonego obrazu z powrotem na Bitmap
-                    Bitmap vignetteImage = ByteArrayToBitmapRGB(imageData, originalImage.Width, originalImage.Height, stride);
+                    vignetteImage = ByteArrayToBitmapRGB(imageData, originalImage.Width, originalImage.Height, stride);
 
                     // Wyœwietlenie przetworzonego obrazu w PictureBox
                     pictureBox2.Image = vignetteImage;
@@ -159,6 +161,8 @@ namespace Winieta
                 MessageBox.Show("Za³aduj obraz przed zastosowaniem efektu!", "B³¹d", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+
 
         /// <summary>
         /// Zapisuje logi o czasie wykonania do pliku.
@@ -239,6 +243,22 @@ namespace Winieta
                     // Obs³uga b³êdów podczas zapisu pliku
                     MessageBox.Show($"Wyst¹pi³ b³¹d podczas zapisywania pliku: {ex.Message}", "B³¹d", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private void checkBoxCSharp_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxCSharp.Checked)
+            {
+                checkBoxASM.Checked = false;
+            }
+        }
+
+        private void checkBoxASM_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxASM.Checked)
+            {
+                checkBoxCSharp.Checked = false;
             }
         }
 

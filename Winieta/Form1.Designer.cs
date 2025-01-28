@@ -43,6 +43,9 @@
             label5 = new Label();
             threadTrackBar = new TrackBar();
             threadCountLabel = new Label();
+            checkBoxCSharp = new CheckBox();
+            checkBoxASM = new CheckBox();
+            impLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)IntensityTB).BeginInit();
@@ -67,7 +70,7 @@
             BtnLoadImg.Name = "BtnLoadImg";
             BtnLoadImg.Size = new Size(125, 32);
             BtnLoadImg.TabIndex = 0;
-            BtnLoadImg.Text = "Load image";
+            BtnLoadImg.Text = "Załaduj obraz";
             BtnLoadImg.Click += BtnLoadImg_Click;
             // 
             // PreEffect
@@ -91,11 +94,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(444, 169);
+            label2.Location = new Point(454, 169);
             label2.Name = "label2";
-            label2.Size = new Size(78, 15);
+            label2.Size = new Size(55, 15);
             label2.TabIndex = 3;
-            label2.Text = "With vignette";
+            label2.Text = "Z winietą";
             label2.Click += label1_Click;
             // 
             // BtnApplyVignette
@@ -104,23 +107,23 @@
             BtnApplyVignette.Name = "BtnApplyVignette";
             BtnApplyVignette.Size = new Size(125, 32);
             BtnApplyVignette.TabIndex = 4;
-            BtnApplyVignette.Text = "Apply vignette";
+            BtnApplyVignette.Text = "Nałóż efekt";
             BtnApplyVignette.UseVisualStyleBackColor = true;
             BtnApplyVignette.Click += BtnApplyVignette_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(110, 169);
+            label1.Location = new Point(99, 169);
             label1.Name = "label1";
-            label1.Size = new Size(85, 15);
+            label1.Size = new Size(97, 15);
             label1.TabIndex = 6;
-            label1.Text = "Original image";
+            label1.Text = "Oryginalny obraz";
             label1.Click += label1_Click_1;
             // 
             // IntensityTB
             // 
-            IntensityTB.Location = new Point(71, 263);
+            IntensityTB.Location = new Point(99, 243);
             IntensityTB.Minimum = 1;
             IntensityTB.Name = "IntensityTB";
             IntensityTB.Size = new Size(125, 45);
@@ -131,11 +134,11 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 275);
+            label3.Location = new Point(9, 256);
             label3.Name = "label3";
-            label3.Size = new Size(52, 15);
+            label3.Size = new Size(79, 15);
             label3.TabIndex = 8;
-            label3.Text = "Intensity";
+            label3.Text = "Intensywność";
             label3.Click += label3_Click;
             // 
             // btnSaveImage
@@ -144,14 +147,14 @@
             btnSaveImage.Name = "btnSaveImage";
             btnSaveImage.Size = new Size(125, 34);
             btnSaveImage.TabIndex = 10;
-            btnSaveImage.Text = "Save Image";
+            btnSaveImage.Text = "Zapisz obraz";
             btnSaveImage.UseVisualStyleBackColor = true;
             btnSaveImage.Click += btnSaveImage_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(131, 309);
+            label4.Location = new Point(131, 291);
             label4.Name = "label4";
             label4.Size = new Size(0, 15);
             label4.TabIndex = 9;
@@ -160,16 +163,16 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(2, 361);
+            label5.Location = new Point(9, 343);
             label5.Name = "label5";
-            label5.Size = new Size(107, 15);
+            label5.Size = new Size(84, 15);
             label5.TabIndex = 12;
-            label5.Text = "Number of threads";
+            label5.Text = "Liczba wątków";
             label5.Click += label5_Click;
             // 
             // threadTrackBar
             // 
-            threadTrackBar.Location = new Point(116, 348);
+            threadTrackBar.Location = new Point(99, 330);
             threadTrackBar.Maximum = 64;
             threadTrackBar.Minimum = 1;
             threadTrackBar.Name = "threadTrackBar";
@@ -181,16 +184,50 @@
             // threadCountLabel
             // 
             threadCountLabel.AutoSize = true;
-            threadCountLabel.Location = new Point(131, 396);
+            threadCountLabel.Location = new Point(111, 375);
             threadCountLabel.Name = "threadCountLabel";
             threadCountLabel.Size = new Size(0, 15);
             threadCountLabel.TabIndex = 15;
+            // 
+            // checkBoxCSharp
+            // 
+            checkBoxCSharp.AutoSize = true;
+            checkBoxCSharp.Checked = true;
+            checkBoxCSharp.CheckState = CheckState.Checked;
+            checkBoxCSharp.Location = new Point(418, 339);
+            checkBoxCSharp.Name = "checkBoxCSharp";
+            checkBoxCSharp.Size = new Size(41, 19);
+            checkBoxCSharp.TabIndex = 16;
+            checkBoxCSharp.Text = "C#";
+            checkBoxCSharp.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxASM
+            // 
+            checkBoxASM.AutoSize = true;
+            checkBoxASM.Location = new Point(418, 374);
+            checkBoxASM.Name = "checkBoxASM";
+            checkBoxASM.Size = new Size(72, 19);
+            checkBoxASM.TabIndex = 17;
+            checkBoxASM.Text = "ASM x64";
+            checkBoxASM.UseVisualStyleBackColor = true;
+            // 
+            // impLabel
+            // 
+            impLabel.AutoSize = true;
+            impLabel.Location = new Point(418, 309);
+            impLabel.Name = "impLabel";
+            impLabel.Size = new Size(131, 15);
+            impLabel.TabIndex = 18;
+            impLabel.Text = "Wybierz implementację";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(640, 486);
+            Controls.Add(impLabel);
+            Controls.Add(checkBoxASM);
+            Controls.Add(checkBoxCSharp);
             Controls.Add(threadCountLabel);
             Controls.Add(threadTrackBar);
             Controls.Add(label5);
@@ -232,5 +269,8 @@
         private Label label5;
         private TrackBar threadTrackBar;
         private Label threadCountLabel;
+        private CheckBox checkBoxCSharp;
+        private CheckBox checkBoxASM;
+        private Label impLabel;
     }
 }

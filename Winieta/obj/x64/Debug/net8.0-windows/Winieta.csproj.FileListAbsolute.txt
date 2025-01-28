@@ -64,3 +64,10 @@ C:\Users\Bartek\source\repos\Winieta\Winieta\bin\x64\Debug\net8.0-windows\ImageP
 C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\Winieta.csproj.AssemblyReference.cache
 C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\Winieta.sourcelink.json
 C:\Users\Bartek\source\repos\Winieta\Winieta\obj\x64\Debug\net8.0-windows\Winieta.csproj.Up2Date
+C:\Users\Bartek\Documents\GitHub\WinietaASM\Winieta\bin\Debug\x64\x64\Debug\net8.0-windows\Winieta.exe
+C:\Users\Bartek\Documents\GitHub\WinietaASM\Winieta\bin\Debug\x64\x64\Debug\net8.0-windows\Winieta.deps.json
+C:\Users\Bartek\Documents\GitHub\WinietaASM\Winieta\bin\Debug\x64\x64\Debug\net8.0-windows\Winieta.runtimeconfig.json
+C:\Users\Bartek\Documents\GitHub\WinietaASM\Winieta\bin\Debug\x64\x64\Debug\net8.0-windows\Winieta.dll
+C:\Users\Bartek\Documents\GitHub\WinietaASM\Winieta\bin\Debug\x64\x64\Debug\net8.0-windows\Winieta.pdb
+C:\Users\Bartek\Documents\GitHub\WinietaASM\Winieta\bin\Debug\x64\x64\Debug\net8.0-windows\ImageProcessing.dll
+C:\Users\Bartek\Documents\GitHub\WinietaASM\Winieta\bin\Debug\x64\x64\Debug\net8.0-windows\ImageProcessing.pdb

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Winieta": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

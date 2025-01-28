@@ -1,0 +1,10 @@
+C:\Users\Bartek\Documents\GitHub\WinietaASM\ImageProcessing\bin\x64\Debug\ImageProcessing.dll
+C:\Users\Bartek\Documents\GitHub\WinietaASM\ImageProcessing\bin\x64\Debug\ImageProcessing.pdb
+C:\Users\Bartek\Documents\GitHub\WinietaASM\ImageProcessing\bin\x64\Debug\System.Drawing.Common.dll
+C:\Users\Bartek\Documents\GitHub\WinietaASM\ImageProcessing\bin\x64\Debug\System.Drawing.Common.pdb
+C:\Users\Bartek\Documents\GitHub\WinietaASM\ImageProcessing\bin\x64\Debug\System.Drawing.Common.xml
+C:\Users\Bartek\Documents\GitHub\WinietaASM\ImageProcessing\obj\x64\Debug\ImageProcessing.csproj.AssemblyReference.cache
+C:\Users\Bartek\Documents\GitHub\WinietaASM\ImageProcessing\obj\x64\Debug\ImageProcessing.csproj.CoreCompileInputs.cache
+C:\Users\Bartek\Documents\GitHub\WinietaASM\ImageProcessing\obj\x64\Debug\ImagePro.C60485DA.Up2Date
+C:\Users\Bartek\Documents\GitHub\WinietaASM\ImageProcessing\obj\x64\Debug\ImageProcessing.dll
+C:\Users\Bartek\Documents\GitHub\WinietaASM\ImageProcessing\obj\x64\Debug\ImageProcessing.pdb
